@@ -1,0 +1,343 @@
+Last login: Sun Sep 28 09:26:20 on ttys000
+tabbylad@Shangs-MacBook-Air ~ % cd Desktop/Coding_the_World/vue_projects 
+tabbylad@Shangs-MacBook-Air vue_projects % npm create vue@latest
+
+> npx
+> "create-vue"
+
+┌  Vue.js - The Progressive JavaScript Framework
+│
+◇  Project name (target directory):
+│  vuehub
+│
+◇  Select features to include in your project: (↑/↓ to navigate, space to
+select, a to toggle all, enter to confirm)
+│  Router (SPA development), Pinia (state management), Prettier (code
+formatting)
+│
+◇  Select experimental features to include in your project: (↑/↓ to navigate,
+space to select, a to toggle all, enter to confirm)
+│  none
+│
+◇  Skip all example code and start with a blank Vue project?
+│  No
+
+Scaffolding project in /Users/tabbylad/Desktop/Coding_the_World/vue_projects/vuehub...
+│
+└  Done. Now run:
+
+   cd vuehub
+   npm install
+   npm run format
+   npm run dev
+
+| Optional: Initialize Git in your project directory with:
+  
+   git init && git add -A && git commit -m "initial commit"
+
+tabbylad@Shangs-MacBook-Air vue_projects % cd vuehub
+tabbylad@Shangs-MacBook-Air vuehub % npm install
+
+added 204 packages, and audited 205 packages in 12s
+
+48 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+tabbylad@Shangs-MacBook-Air vuehub % npm run format
+
+> vuehub@0.0.0 format
+> prettier --write src/
+
+src/App.vue 103ms (unchanged)
+src/assets/base.css 5ms (unchanged)
+src/assets/main.css 2ms (unchanged)
+src/components/HelloWorld.vue 8ms (unchanged)
+src/components/icons/IconCommunity.vue 1ms (unchanged)
+src/components/icons/IconDocumentation.vue 1ms (unchanged)
+src/components/icons/IconEcosystem.vue 1ms (unchanged)
+src/components/icons/IconSupport.vue 1ms (unchanged)
+src/components/icons/IconTooling.vue 2ms (unchanged)
+src/components/TheWelcome.vue 9ms
+src/components/WelcomeItem.vue 4ms (unchanged)
+src/main.js 2ms (unchanged)
+src/router/index.js 3ms (unchanged)
+src/stores/counter.js 3ms (unchanged)
+src/views/AboutView.vue 1ms (unchanged)
+src/views/HomeView.vue 1ms (unchanged)
+tabbylad@Shangs-MacBook-Air vuehub % npm run dev
+
+> vuehub@0.0.0 dev
+> vite
+
+
+  VITE v7.1.7  ready in 685 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  Vue DevTools: Open http://localhost:5173/__devtools__/ as a separate window
+  ➜  Vue DevTools: Press Option(⌥)+Shift(⇧)+D in App to toggle the Vue DevTools
+  ➜  press h + enter to show help
+tabbylad@Shangs-MacBook-Air vuehub % npm install tailwindcss @tailwindcss/vite
+
+added 85 packages, and audited 243 packages in 7s
+
+60 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+tabbylad@Shangs-MacBook-Air vuehub % npm run dev
+
+> vuehub@0.0.0 dev
+> vite
+
+13:29:42 [vite] (client) Re-optimizing dependencies because lockfile has changed
+
+  VITE v7.1.7  ready in 1094 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  Vue DevTools: Open http://localhost:5173/__devtools__/ as a separate window
+  ➜  Vue DevTools: Press Option(⌥)+Shift(⇧)+D in App to toggle the Vue DevTools
+  ➜  press h + enter to show help
+tabbylad@Shangs-MacBook-Air vuehub % npm run dev
+
+> vuehub@0.0.0 dev
+> vite
+
+
+  VITE v7.1.7  ready in 582 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  Vue DevTools: Open http://localhost:5173/__devtools__/ as a separate window
+  ➜  Vue DevTools: Press Option(⌥)+Shift(⇧)+D in App to toggle the Vue DevTools
+  ➜  press h + enter to show help
+tabbylad@Shangs-MacBook-Air vuehub % git init
+Initialized empty Git repository in /Users/tabbylad/Desktop/Coding_the_World/vue_projects/vuehub/.git/
+tabbylad@Shangs-MacBook-Air vuehub % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitattributes
+	.gitignore
+	.prettierrc.json
+	.vscode/
+	README.md
+	index.html
+	jsconfig.json
+	package-lock.json
+	package.json
+	public/
+	src/
+	vite.config.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+tabbylad@Shangs-MacBook-Air vuehub % open .gitignore
+tabbylad@Shangs-MacBook-Air vuehub % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitattributes
+	.gitignore
+	.prettierrc.json
+	README.md
+	index.html
+	jsconfig.json
+	package-lock.json
+	package.json
+	public/
+	src/
+	vite.config.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+tabbylad@Shangs-MacBook-Air vuehub % git add .
+tabbylad@Shangs-MacBook-Air vuehub % git commit -m "1st vuehub"
+[main (root-commit) 931e017] 1st vuehub
+ 27 files changed, 4220 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 .gitignore
+ create mode 100644 .prettierrc.json
+ create mode 100644 README.md
+ create mode 100644 index.html
+ create mode 100644 jsconfig.json
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 public/favicon.ico
+ create mode 100644 src/App.vue
+ create mode 100644 src/assets/base.css
+ create mode 100644 src/assets/logo.svg
+ create mode 100644 src/assets/main.css
+ create mode 100644 src/components/HelloWorld.vue
+ create mode 100644 src/components/TheWelcome.vue
+ create mode 100644 src/components/WelcomeItem.vue
+ create mode 100644 src/components/icons/IconCommunity.vue
+ create mode 100644 src/components/icons/IconDocumentation.vue
+ create mode 100644 src/components/icons/IconEcosystem.vue
+ create mode 100644 src/components/icons/IconSupport.vue
+ create mode 100644 src/components/icons/IconTooling.vue
+ create mode 100644 src/main.js
+ create mode 100644 src/router/index.js
+ create mode 100644 src/stores/counter.js
+ create mode 100644 src/views/AboutView.vue
+ create mode 100644 src/views/HomeView.vue
+ create mode 100644 vite.config.js
+tabbylad@Shangs-MacBook-Air vuehub % git remote add origin git@github.com:Taffetaism/vuehub.git
+tabbylad@Shangs-MacBook-Air vuehub % git branch -M main
+tabbylad@Shangs-MacBook-Air vuehub % git push -u origin main
+Enumerating objects: 37, done.
+Counting objects: 100% (37/37), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (33/33), done.
+Writing objects: 100% (37/37), 37.40 KiB | 3.74 MiB/s, done.
+Total 37 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Taffetaism/vuehub.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+tabbylad@Shangs-MacBook-Air vuehub % git log
+commit 931e017c059166dc5a81ef67d2bf41e219f6af6c (HEAD -> main, origin/main)
+Author: Taffetaism <rishoukin@gmail.com>
+Date:   Sun Sep 28 13:34:36 2025 -0700
+
+    1st vuehub
+tabbylad@Shangs-MacBook-Air vuehub % npm install gh-pages --save-dev
+
+added 112 packages, and audited 289 packages in 3s
+
+68 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+tabbylad@Shangs-MacBook-Air vuehub % npm run deploy
+
+> vuehub@0.0.0 predeploy
+> npm run build
+
+
+> vuehub@0.0.0 build
+> vite build
+
+vite v7.1.7 building for production...
+✓ 49 modules transformed.
+dist/index.html                      0.45 kB │ gzip:  0.29 kB
+dist/assets/AboutView-CSIvawM9.css   0.09 kB │ gzip:  0.10 kB
+dist/assets/index-B_6fM44m.css       8.48 kB │ gzip:  2.66 kB
+dist/assets/AboutView-Y7QdaR6f.js    0.24 kB │ gzip:  0.21 kB
+dist/assets/index-B8xUGBRO.js       96.88 kB │ gzip: 38.00 kB
+✓ built in 470ms
+
+> vuehub@0.0.0 deploy
+> gh-pages -d dist
+
+Published
+tabbylad@Shangs-MacBook-Air vuehub % git push
+Everything up-to-date
+tabbylad@Shangs-MacBook-Air vuehub % npm run deploy
+
+> vuehub@0.0.0 predeploy
+> npm run build
+
+
+> vuehub@0.0.0 build
+> vite build
+
+vite v7.1.7 building for production...
+✓ 49 modules transformed.
+dist/index.html                      0.45 kB │ gzip:  0.29 kB
+dist/assets/AboutView-CSIvawM9.css   0.09 kB │ gzip:  0.10 kB
+dist/assets/index-B_6fM44m.css       8.48 kB │ gzip:  2.66 kB
+dist/assets/AboutView-CHe9RPbc.js    0.24 kB │ gzip:  0.21 kB
+dist/assets/index-Bs9ofiNz.js       96.99 kB │ gzip: 38.04 kB
+✓ built in 456ms
+
+> vuehub@0.0.0 deploy
+> gh-pages -d dist
+
+Published
+tabbylad@Shangs-MacBook-Air vuehub % npm run deploy
+
+> vuehub@0.0.0 predeploy
+> npm run build
+
+
+> vuehub@0.0.0 build
+> vite build
+
+vite v7.1.7 building for production...
+✓ 49 modules transformed.
+dist/index.html                      0.43 kB │ gzip:  0.28 kB
+dist/assets/AboutView-CSIvawM9.css   0.09 kB │ gzip:  0.10 kB
+dist/assets/index-B_6fM44m.css       8.48 kB │ gzip:  2.66 kB
+dist/assets/AboutView-2VwUy0oY.js    0.24 kB │ gzip:  0.20 kB
+dist/assets/index-Sbpizdht.js       96.98 kB │ gzip: 38.03 kB
+✓ built in 452ms
+
+> vuehub@0.0.0 deploy
+> gh-pages -d dist
+
+Published
+tabbylad@Shangs-MacBook-Air vuehub % npm run deploy
+
+> vuehub@0.0.0 predeploy
+> npm run build
+
+
+> vuehub@0.0.0 build
+> vite build
+
+vite v7.1.7 building for production...
+✓ 49 modules transformed.
+dist/index.html                      0.45 kB │ gzip:  0.29 kB
+dist/assets/AboutView-CSIvawM9.css   0.09 kB │ gzip:  0.10 kB
+dist/assets/index-B_6fM44m.css       8.48 kB │ gzip:  2.66 kB
+dist/assets/AboutView-CHe9RPbc.js    0.24 kB │ gzip:  0.21 kB
+dist/assets/index-Bs9ofiNz.js       96.99 kB │ gzip: 38.04 kB
+✓ built in 450ms
+
+> vuehub@0.0.0 deploy
+> gh-pages -d dist
+
+Published
+tabbylad@Shangs-MacBook-Air vuehub % cd ..
+tabbylad@Shangs-MacBook-Air vue_projects % npm create vue@latest
+
+> npx
+> "create-vue"
+
+┌  Vue.js - The Progressive JavaScript Framework
+│
+◇  Project name (target directory):
+│  hubvue
+│
+◇  Select features to include in your project: (↑/↓ to navigate, space to
+select, a to toggle all, enter to confirm)
+│  Router (SPA development), Pinia (state management), Prettier (code
+formatting)
+│
+◇  Select experimental features to include in your project: (↑/↓ to navigate,
+space to select, a to toggle all, enter to confirm)
+│  none
+│
+◇  Skip all example code and start with a blank Vue project?
+│  No
+
+Scaffolding project in /Users/tabbylad/Desktop/Coding_the_World/vue_projects/hubvue...
+│
+└  Done. Now run:
+
+   cd hubvue
+   npm install
+   npm run format
+   npm run dev
+
+| Optional: Initialize Git in your project directory with:
+  
+   git init && git add -A && git commit -m "initial commit"
+
+tabbylad@Shangs-MacBook-Air vue_projects % 
