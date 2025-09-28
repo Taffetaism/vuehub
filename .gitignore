@@ -29,3 +29,7 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+
+# text
+terminal_vuehub.txt
